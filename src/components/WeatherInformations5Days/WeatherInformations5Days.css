@@ -1,0 +1,62 @@
+.weather5Days-container {
+    min-width: 30rem;
+    max-width: 100rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.weather5Days-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.weather5Days-container .weather5Days-container-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.weather5Days-container .weather5Days-container-items .weather5Days-item {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #00b4db80, #0083b000);
+    border-radius: 50%;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.weather5Days-container .weather5Days-container-items .weather5Days-item p {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 700px) {
+    .weather5Days-container .weather5Days-container-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    .weather5Days-container .weather5Days-container-items {
+        flex-direction: row;
+    }
+
+    .weather5Days-container .weather5Days-container-items .weather5Days-item {
+        border-radius: 20px;
+        width: auto;
+        height: auto;
+        padding: 10px;
+    }
+}
